@@ -1,0 +1,24 @@
+<div class="row">
+	<div class="col-xs- col-sm- col-md- col-md-"></div>
+	<div class="col-xs- col-sm- col-md- col-md-">
+		<h1 style="text-align: center">Add a task</h1>
+		<input type="text"
+				data-ng-model="task"
+				data-ng-keyup="searchEnter()"
+				style="display: block;margin: 0 auto;padding: 5px;font-size: 15px;width: 300px">
+		<div id="tasksToShow">
+			<ul >
+				<li class="todoCheckbox"
+					data-ng-repeat="oneTask in tasks track by $index">
+					<input type="checkbox" data-ng-model="oneTask.status1">
+					<span contenteditable="false"
+						data-ng-dblclick="contentEdit(oneTask.taskMessage)"  data-ng-modal="oneTask.taskMessage"
+						data-ng-keydown="enterAgain(oneTask.taskMessage)"
+						class="done-{{oneTask.status1}}">
+						{{oneTask.taskMessage}}
+					</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
