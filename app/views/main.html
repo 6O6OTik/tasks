@@ -1,1 +1,93 @@
-<h1>Hello</h1>
+
+<div class="row">
+	<div>
+		<h1>Main HTML Page</h1>
+		<div>
+			<br>
+			<sas>{{name}}</sas>
+			<br>
+			<foo-bar> This is {{name}}  </foo-bar>
+			<br>
+			<foo-user></foo-user>
+		</div>
+		<div>
+			<br>
+			<p>{{hello}}</p>
+				
+			<post></post>
+		</div>
+		<br>
+		<div>
+			<book></book>
+			<p>
+				This is ctrl name {{name1}}
+			</p>
+			<p>
+				This is color {{color}}
+			</p>
+		
+		</div> 
+		<div>
+			<br>
+			+++++++++++++++++++++++++++++++
+			<br>
+			<div>
+				 My Ctrl name is {{name}}
+			</div>
+			<div>
+				<button ng-click='reverse()'>
+					Reverse name
+				</button>
+			</div>
+			<br>
+			_______________________________
+			<br>
+			<foo-qwer name="{{name}}" color="color" reverse="reverse()" ></foo-qwer>
+			_______________________________
+			<br>
+		</div>
+		<div>
+			Forma
+			_______________________________
+			<form wrap-in='red'>
+				<div>
+
+					<label>
+						Email
+						<input type="text" placeholder="Place your email">
+					</label>
+				</div>
+	
+				<div>
+					<label>
+						Password
+						<input type="password" placeholder="Ecnter your password">
+					</label>
+				</div>
+				<button>Submit </button>
+				<br>
+				
+			</form>
+			_______________________________
+
+		</div>
+		<script type="text/ng-template" id='red'>
+		<div class='red'>
+			
+		</div>
+		</script>
+		<div>
+			<ui-source>
+				<div>
+					<label>Name: </label>
+					<input type="text" 
+							ng-model="yourName"
+							placeholder="Enter a name here">
+					<br>
+					<h1>Hello {{yourName}}</h1>
+
+				</div>
+			</ui-source>
+		</div>
+	</div>
+</div>

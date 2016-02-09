@@ -94,3 +94,6 @@ span[contenteditable="true"]{
 li.todoCheckbox {
   list-style-type: none;
 }
+.red {
+  color: red;
+}

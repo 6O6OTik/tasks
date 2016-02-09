@@ -38,7 +38,7 @@ angular.module('wojsApp')
 			};
 
 			$scope.enterAgain = function(msg){
-				if( event.which == 13 && msg !=""){
+				if( event.which == 32 && msg !=""){
 					$scope.contentEdit(msg);
 				}
 
